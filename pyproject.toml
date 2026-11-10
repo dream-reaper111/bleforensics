@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bleforensics"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.8,<1"]
+
+[project.scripts]
+bleforensics = "bleforensics.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bleforensics*"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+[tool.ruff.lint]
+select = ["E", "F", "B"]
+ignore = ["E501"]

@@ -1,0 +1,3 @@
+# Validation report
+
+Date: 2026-11-09. Synthetic protocol fixtures validate BTSnoop parse, PCAP round-trip, ACL/ATT metadata, btmon text, CLI output, truncated input, unsupported datalink, evidence hashing, and disconnect sessions. Results are recorded after local execution. No hardware capture or real evidence was used. PCAPNG and Nordic sniffer capture import are not implemented; btmon text coverage is intentionally narrow. HCI captures do not establish RF packet loss or complete air traffic. Next milestone: sanitized real HCI corpora, PCAPNG input, and Nordic format adapter with explicit provenance.
